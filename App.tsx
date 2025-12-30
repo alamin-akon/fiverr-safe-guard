@@ -150,26 +150,10 @@ const App: React.FC = () => {
             />
 
             <div className={`p-8 border-t ${isDarkMode ? 'border-gray-800 bg-[#0B0E14]' : 'border-[#e4e5e7] bg-[#fafafa]'}`}>
-              <span className={`text-[11px] font-black uppercase mb-4 block tracking-[0.2em] ${isDarkMode ? 'text-gray-500' : 'text-[#9ea0a5]'}`}>
+              <span className={`text-[11px] font-black uppercase mb-4 block tracking-[0.2em] display ${isDarkMode ? 'text-gray-500' : 'text-[#9ea0a5]'}`}>
                 Real-time Detection Panel:
               </span>
-              <div className="flex flex-wrap gap-2 max-h-[140px] overflow-y-auto custom-scrollbar">
-                {RESTRICTED_KEYWORDS.slice(0, 25).map(word => {
-                  const isFound = input.toLowerCase().includes(word.toLowerCase());
-                  return (
-                    <span
-                      key={word}
-                      className={`px-3 py-1.5 border rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all duration-300 ${
-                        isFound 
-                          ? 'bg-red-500/10 border-red-500/30 text-red-500 scale-105 shadow-[0_0_15px_rgba(239,68,68,0.1)]' 
-                          : `${isDarkMode ? 'bg-gray-800/40 border-gray-800 text-gray-600' : 'bg-white border-[#dadbdd] text-[#9ea0a5] opacity-40'}`
-                      }`}
-                    >
-                      {word}
-                    </span>
-                  );
-                })}
-              </div>
+              
             </div>
           </section>
 
@@ -204,11 +188,11 @@ const App: React.FC = () => {
               </div>
             </div>
             
-            <div className="p-10 flex flex-col h-full">
-              <div className={`flex-1 p-10 rounded-2xl border text-l leading-relaxed mb-8 min-h-[350px] break-words whitespace-pre-wrap shadow-inner relative overflow-hidden transition-colors ${
+            <div className="flex flex-col h-full">
+              <div className={`flex-1 p-10 rounded-2xl border text-l leading-relaxed min-h-[350px] break-words whitespace-pre-wrap shadow-inner relative overflow-hidden transition-colors ${
                 isDarkMode ? 'bg-[#0B0E14]/40 border-gray-800 text-gray-100' : 'bg-[#F9FAFB] border-[#efeff0] text-[#404145]'
               }`}>
-                <div className="font-black text-[11px] text-[#9ea0a5] uppercase mb-6 tracking-[0.3em] opacity-50">Filtered Output:</div>
+                {/* <div className="font-black text-[11px] text-[#9ea0a5] uppercase mb-6 tracking-[0.3em] opacity-50">Filtered Output:</div> */}
                 <div className="relative z-10 font-medium">
                   {renderSafeMessage(output)}
                 </div>
