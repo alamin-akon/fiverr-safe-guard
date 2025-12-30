@@ -5,22 +5,22 @@ export const RESTRICTED_KEYWORDS = [
  // --- PREVIOUS LIST (Updated) ---
 
 // Communication (Expanded)
-'email', 'mail', 'gmail', 'yahoo', 'hotmail', 'outlook', 'phone', 'number', 'mobile', 'cell', 'call', 'video call', 'voice', 'whatsapp', 'skype', 'zoom', 'telegram', 'insta', 'ig', 'facebook', 'fb', 'messenger', 'direct', 'outside', 'contact', 'message me', 'signal', 'wechat', 'viber', 'slack', 'google meet', 'teams', 'teamviewer', 'anydesk', 'discord', 'linkedin', 'twitter', 'x.com', 'snapchat',
+'email', 'mail', 'gmail', 'yahoo', 'hotmail', 'outlook', 'phone', 'number', 'mobile',  'call', 'video call', 'whatsapp', 'skype', 'zoom', 'telegram', 'facebook', 'fb', 'messenger', 'contact',  'signal', 'wechat', 'viber', 'slack', 'google meet', 'teams', 'anydesk', 'discord', 'linkedin', 'twitter', 'x.com', 'snapchat', 'instagram', 'dm', 'direct message', 'text', 'sms', 
 
 // Payment & Money (Expanded)
-'pay', 'payment', 'paid', 'pricing', 'price', 'money', 'dollar', 'euro', 'gbp', 'bank', 'transfer', 'wise', 'payoneer', 'paypal', 'commission', 'fee', 'tip', 'cash', 'wallet', 'crypto', 'bitcoin', 'btc', 'usdt', 'eth', 'binance', 'coinbase', 'venmo', 'zelle', 'cashapp', 'revolut', 'stripe', 'western union', 'billing', 'invoice', 'budget', 'cost', 'charge',
+'pay', 'payment', 'paid', 'pricing', 'price', 'money', 'dollar', 'euro', 'gbp', 'bank', 'transfer', 'wise', 'payoneer', 'paypal', 'commission', 'fee', 'tip', 'cash', 'wallet', 'crypto', 'bitcoin', 'btc', 'usdt', 'eth', 'binance', 'coinbase', 'venmo', 'zelle', 'cashapp', 'revolut', 'stripe', 'western union', 'billing', 'invoice', 'budget', 'cost', 'charge', 'subscription', 'donation',
 
 // Feedback & Reviews (Manipulation is banned)
-'5 star', 'five star', 'review', 'rating', 'feedback', 'positive feedback', 'good review', 'comment', 'testimonial', 'fake review', 'amazon review', 'google review', 'yelp', 'trustpilot',
+'5 star', 'five star', 'review', 'rating', 'positive feedback', 'good review',  'fake review', 'yelp', 'trustpilot', 'google reviews', 'testimonials', 'endorsement', 'recommendation',
 
 // Academic & School (STRICTLY PROHIBITED)
-'homework', 'assignment', 'exam', 'quiz', 'test', 'university', 'college', 'school', 'grade', 'class', 'course', 'essay', 'thesis', 'dissertation', 'research paper', 'proposal', 'student', 'canvas', 'blackboard', 'moodle', 'portal', 'admission', 'academic', 'write my paper',
+'homework', 'assignment', 'exam', 'quiz', 'test', 'university', 'college', 'school', 'grade', 'class', 'course', 'essay', 'thesis', 'dissertation', 'research paper', 'proposal', 'student', 'canvas', 'blackboard', 'moodle', 'portal', 'admission', 'academic', 'write my paper', 'do my homework',
 
 // Personal Info & Documents
-'cv', 'resume', 'portfolio', 'address', 'location', 'street', 'city', 'identity', 'id card', 'passport', 'driving license', 'kyc', 'verification', 'verify',
+'cv', 'resume', 'portfolio', 'address', 'location', 'street', 'city', 'identity', 'id card', 'passport', 'driving license', 'kyc', 'verification',   'verify',
 
 // Prohibited Services & Others
-'domain', 'hosting', 'login', 'credentials', 'password', 'access', 'bot', 'scraping', 'traffic', 'click', 'adsense', 'followers', 'likes', 'views', 'subscribers', 'watch time', 'account', 'link', 'url', 'website'
+'domain', 'hosting', 'login', 'credentials', 'password', 'bot', 'scraping', 'traffic', 'adsense', 'subscribers', 'followers', 'likes', 'seo', 'hack', 'hacking', 'phishing', 'malware', 'spyware', 'ransomware', 'ddos', 'piracy', 'torrent', 'illegal', 'banned', 'prohibited', 'restricted'
 ];
 
 export const ICONS = {
