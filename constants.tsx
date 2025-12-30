@@ -11,7 +11,7 @@ export const RESTRICTED_KEYWORDS = [
   // Academic
   'homework', 'assignment', 'exam', 'quiz', 'test', 'university', 'college', 'grade',
   // Platforms & Others
-  'fiverr', 'discord', 'linkedin', 'twitter', 'instagram', 'external', 'account', 'link'
+  'domain', 'discord', 'linkedin', 'twitter', 'instagram', 'external', 'account', 'link'
 ];
 
 export const ICONS = {
