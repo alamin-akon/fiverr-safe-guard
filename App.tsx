@@ -141,7 +141,7 @@ const App: React.FC = () => {
             </div>
             
             <textarea
-              className={`flex-1 w-full p-10 text-2xl leading-relaxed focus:outline-none resize-none transition-colors duration-300 ${
+              className={`flex-1 w-full p-10 text-l leading-relaxed focus:outline-none resize-none transition-colors duration-300 ${
                 isDarkMode ? 'bg-[#151921] text-gray-100 placeholder-gray-600' : 'bg-white text-[#404145] placeholder-gray-300'
               }`}
               placeholder="Paste message here... e.g. 'Pay me via PayPal and add me on WhatsApp'"
@@ -205,7 +205,7 @@ const App: React.FC = () => {
             </div>
             
             <div className="p-10 flex flex-col h-full">
-              <div className={`flex-1 p-10 rounded-2xl border text-2xl leading-relaxed mb-8 min-h-[350px] break-words whitespace-pre-wrap shadow-inner relative overflow-hidden transition-colors ${
+              <div className={`flex-1 p-10 rounded-2xl border text-l leading-relaxed mb-8 min-h-[350px] break-words whitespace-pre-wrap shadow-inner relative overflow-hidden transition-colors ${
                 isDarkMode ? 'bg-[#0B0E14]/40 border-gray-800 text-gray-100' : 'bg-[#F9FAFB] border-[#efeff0] text-[#404145]'
               }`}>
                 <div className="font-black text-[11px] text-[#9ea0a5] uppercase mb-6 tracking-[0.3em] opacity-50">Filtered Output:</div>
