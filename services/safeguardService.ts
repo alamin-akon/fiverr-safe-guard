@@ -1,4 +1,3 @@
-
 import { RESTRICTED_KEYWORDS } from '../constants';
 
 export interface SafeguardResult {
@@ -24,13 +23,19 @@ export const applySafeguard = (text: string): SafeguardResult => {
     changesDetected.add('$ Symbol');
   }
 
-  // 2. Handle Numbers (long sequences often flagged)
-  processed = processed.replace(/\d{3,}/g, (match) => {
+  // ---------------------------------------------------------
+  // ❌ এই অংশটি বাদ দেওয়া হয়েছে যাতে নাম্বারে হাইফেন না আসে
+  // ---------------------------------------------------------
+  /*
+  processed = processed.replace(/\d+/g, (match) => {
     changesDetected.add(`Number Pattern: ${match}`);
     return `**${match.split('').join('-')}**`;
   });
+  */
+  // ---------------------------------------------------------
 
-  // 3. Handle Restricted Keywords & Phrases
+
+  // 2. Handle Restricted Keywords & Phrases
   // Sort keywords by length descending to match phrases like "5 star" before "star"
   const sortedKeywords = [...RESTRICTED_KEYWORDS].sort((a, b) => b.length - a.length);
 
@@ -62,7 +67,7 @@ export const applySafeguard = (text: string): SafeguardResult => {
     });
   });
 
-  // 4. Handle email-like patterns specifically if missed
+  // 3. Handle email-like patterns specifically if missed
   processed = processed.replace(/([a-zA-Z0-9._-]+)@([a-zA-Z0-9._-]+)\.([a-zA-Z]{2,5})/gi, (match, p1, p2, p3) => {
     changesDetected.add(`Email Pattern: ${match}`);
     return `**${p1.split('').join('-')}(at)${p2.split('').join('-')}(dot)${p3}**`;
